@@ -7,7 +7,6 @@ def caching_fibonacci():
             return 1  
         if n in cache:
             return cache[n]  
-
         cache[n] = fibonacci(n - 1) + fibonacci(n - 2)   # інакше обчислюємо рекурсивно та зберігаємо у кеш
         return cache[n]
 
